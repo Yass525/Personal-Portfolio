@@ -41,22 +41,27 @@ const Contact = () => {
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
-              +1 1234 556 75
+              +216 52 2626 41
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
-              contact@lama.dev
+              yassine.trabelsi1@esprit.tn
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
-              245 King Street, Touterie Victoria 8520 Australia
+              Tunisia,Tunis
             </div>
           </div>
         </div>
         <div className="c-right">
           <p className="c-desc">
             <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
+            freelancing if the right project comes along with me.
+           
+            <hr className="style11"/>
+            <br></br>
+            Want a fitness plan customized for your personal goals and lifestyle ? 
+            You are in the right place!
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />

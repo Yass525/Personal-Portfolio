@@ -19,7 +19,7 @@ const Intro = () => {
           </div>
           <p className="i-desc">
          
-            I'm a software engineer student at the high school of technology
+            I'm a software engineer student at the university of technology
             <b> ESPRIT</b>, i design and develop modern software and web applications.
             <br></br>
             I'm a fitness enthusiast who have been working out for more than 8 years

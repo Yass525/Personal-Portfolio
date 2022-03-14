@@ -1,32 +1,35 @@
+import instaProfile from "./img/InstaProfile.png";
+import Me from "./img/me.png";
 export const products = [
+  
   {
     id: 1,
-    img: "",
-    link: "http://lama.dev",
+    img: "https://i.ibb.co/BNhLvZ2/Insta-Profile.png",
+    link: "https://www.instagram.com/yassiine_trabelsii/",
   },
   {
     id: 2,
     img: "",
-    link: "http://lama.dev",
+    link: "",
   },
   {
     id: 3,
     img: "",
-    link: "http://lama.dev",
+    link: "",
   },
   {
     id: 4,
     img: "",
-    link: "http://lama.dev",
+    link: "",
   },
   {
     id: 5,
     img: "",
-    link: "http://lama.dev",
+    link: "",
   },
   {
     id: 6,
     img: "",
-    link: "http://lama.dev",
+    link: "",
   },
 ];
