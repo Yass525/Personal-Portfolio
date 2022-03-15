@@ -1,5 +1,10 @@
 import "./intro.css";
 import Me from "../../img/me.png";
+import facebook from "../../img/facebook.png";
+import instagram from "../../img/instagram.png";
+import linkedin from "../../img/linkedin.png";
+import cv from "../../img/cv.png";
+import github from "../../img/github.png";
 
 const Intro = () => {
   return (
@@ -14,8 +19,8 @@ const Intro = () => {
               <div className="i-title-item">Web Developer</div>
               <div className="i-title-item">Fitness Enthusiast </div>
               <div className="i-title-item">Gamer</div>
-      
-            </div>
+            </div>   
+            
           </div>
           <p className="i-desc">
          
@@ -24,7 +29,25 @@ const Intro = () => {
             <br></br>
             I'm a fitness enthusiast who have been working out for more than 8 years
             with experience in <b>Calisthenics</b> and <b>weightlifting</b>
+
           </p>
+          <div className="i-iconSet">
+            <a href="https://github.com/Yass525" target="_blank" rel="noopener noreferrer">    
+                <img className="i-icon" src={github} alt="github"></img>
+              </a>
+            <a href="https://www.instagram.com/yassiine_trabelsii/" target="_blank" rel="noreferrer">    
+                <img className="i-icon" src={cv} alt="cv"></img>
+              </a>
+            <a href="https://www.linkedin.com/in/yassine-trabelsi-639b0a195/" target="_blank" rel="noreferrer">
+                <img className="i-icon" src={linkedin} alt="linkedin"></img>
+                </a>
+            <a href="https://www.facebook.com/yassine.trabelsi.75/" target="_blank" rel="noreferrer">
+                <img className="i-icon" src={facebook} alt="Facebook"></img>
+            </a>
+            <a href="https://www.instagram.com/yassiine_trabelsii/" target="_blank" rel="noreferrer">    
+                <img className="i-icon" src={instagram} alt="instagram"></img>
+              </a>
+          </div>
         </div>
         <svg
           width="75"

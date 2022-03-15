@@ -54,6 +54,17 @@
 
 .a-desc{
     font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+  
+}
+
+.a-skill>li{
+  margin-right: 100px;
+  padding: flex 0px;
+  padding-bottom: 14px;
 }
 
 .a-award{

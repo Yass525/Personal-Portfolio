@@ -10,62 +10,62 @@ import { useForm, set } from "react-cool-form";
 import Joi from "joi";
 
 const JoiSchema = Joi.object({
-  user_name: Joi.string().required(),
-  user_email: Joi.string().email({ tlds: false }).required(),
-  user_subject: Joi.string().required().min(6),
-  user_message: Joi.string().required().min(10),
+  user_name: Joi.string().required().label("Name"),
+  user_email: Joi.string().email({ tlds: false }).required().label("Email"),
+  user_subject: Joi.string().required().label("Subject"),
+  message: Joi.string().required().min(10).label("Message"),
 });
 
-let errors = {};
 // Reusable validation function for Joi
 const validateWithJoi = (schema) => (values) => {
- 
-
+  let errors = {};
   const { error: joiError } = schema.validate(values, { abortEarly: false });
 
-  if (joiError)
-    joiError.details.forEach(({ path, message }) =>
+  if(!joiError) return null
+  
+joiError.details.forEach(({ path, message }) =>
       set(errors, path[0], message)
     );
 
 return errors;
 };
 
+
+
 const Contact = () => {
   const formRef = useRef();
+  
   const [done, setDone] = useState(false)
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-
-  const { form, use } = useForm({
-    defaultValues: { user_name: "", user_email: "", user_subject: "",user_message:"" },
-    
-    validate: validateWithJoi(JoiSchema),
-    onSubmit: (values) => console.log("onSubmit: ", values),
-    onError: (errors) => console.log("onError: ", errors),
-  });
-  const errors = use("errors", { errorWithTouched: true });
-
-  const handleSubmit = (e) => {
+  
+  
+  const handleSubmit = async (e) => {
+   
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_okw1gzy",
-        "template_s096dhy",
-        form.current,
-        "DmjAsI0kX04gncf5U"
-      )
-      .then(
-        (result) => {
+    await emailjs.sendForm("service_okw1gzy","template_s096dhy",formRef.current,"DmjAsI0kX04gncf5U")
+      .then((result) => {
           console.log(result.text);
           setDone(true)
-        },
-        (error) => {
+        },(error) => {
           console.log(error.text);
         }
       );
   };
 
+
+  const { form, use } = useForm({
+    defaultValues: { user_name: "", user_email: "", user_subject: "",message:"" },
+   
+    validate: validateWithJoi(JoiSchema),
+    
+    onError: (errors) => console.log("onError: ", errors),
+  });
+  
+
+  const errors = use("errors", { errorWithTouched: false });
+
+  
   return (
     <div className="c">
       <div className="c-bg"></div>
@@ -91,21 +91,24 @@ const Contact = () => {
           <p className="c-desc">
             <b>What’s your story?</b> Get in touch. Always available for
             freelancing if the right project comes along with me.
-           
+            </p>
             <hr className="style11"/>
             <br></br>
+            <p className="c-desc">
             Want a fitness plan customized for your personal goals and lifestyle ? 
             You are in the right place!
-          </p>
-          <form ref={form} onSubmit={handleSubmit} noValidate>
+            </p>
+          <form ref={formRef} onSubmit={handleSubmit} >
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" required />
-            {errors && <p>{errors.user_email}</p>}
+            {errors.user_name && <p>{errors.user_name}</p>}
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" required/>
-   
+            {errors.user_subject && <p>{errors.user_subject}</p>}
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" required />
-         
+            {errors.user_email && <p>{errors.user_email}</p>}
             <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" required />
-            <button>Send an email</button>
+            {errors.message && <p>{errors.message}</p>}
+             {/* <button type="submit" value="Send an email"/> */}
+             <button >Send an email</button>
             {done && "Thank you..."}
           </form>
         </div>

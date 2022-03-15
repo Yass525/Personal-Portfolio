@@ -1,6 +1,5 @@
 import "./about.css";
-import Award from "../../img/award.png";
-import Me from "../../img/me2.jpg";
+import Me from "../../img/me2.png";
 
 const About = () => {
   return (
@@ -16,13 +15,26 @@ const About = () => {
         </div>
       </div>
       <div className="a-right">
-        <h1 className="a-title">About Me</h1>
+        <h1 className="a-title">Skills</h1>
         <p className="a-sub">
-          Sub Title here 
+        Some of the significant aptitudes which will assist me with achieving your objectives.
         </p>
-        <p className="a-desc">
-          A paragraph here
-        </p>
+        <div className="a-desc">
+          <ul className="a-skill">
+          <li>HTML-CSS-JavaScript</li>
+          <li>nodejs-express</li>
+          <li>MySQL-MongoDB</li>
+          <li>Java/Spring</li>
+          <li>R</li>
+          </ul>
+          <ul className="a-skill">
+          <li>Algorithms</li>
+          <li>PHP-Symfony</li>
+          <li>ReactJS-Redux</li>
+          <li>Python-Django</li>
+          <li>Angular</li>
+          </ul>
+        </div>
         {/* <div className="a-award">
           <img src="" alt="we can put image here" className="a-award-img" />
           <div className="a-award-texts">

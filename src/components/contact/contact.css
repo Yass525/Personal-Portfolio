@@ -11,6 +11,7 @@
 }
 
 .c-wrapper {
+  padding-top: 150px !important;
   padding: 50px;
   display: flex;
 }
@@ -69,6 +70,8 @@ textarea {
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  border:none;
+  border-bottom: 1px solid black;
 }
 
 button {
