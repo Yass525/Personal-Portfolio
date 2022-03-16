@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/yassinePortfolio.github.io/static/css/main.5b5763bc.chunk.css",
+    "main.js": "/yassinePortfolio.github.io/static/js/main.f444da97.chunk.js",
+    "main.js.map": "/yassinePortfolio.github.io/static/js/main.f444da97.chunk.js.map",
+    "runtime-main.js": "/yassinePortfolio.github.io/static/js/runtime-main.2b330a5f.js",
+    "runtime-main.js.map": "/yassinePortfolio.github.io/static/js/runtime-main.2b330a5f.js.map",
+    "static/js/2.79acc478.chunk.js": "/yassinePortfolio.github.io/static/js/2.79acc478.chunk.js",
+    "static/js/2.79acc478.chunk.js.map": "/yassinePortfolio.github.io/static/js/2.79acc478.chunk.js.map",
+    "index.html": "/yassinePortfolio.github.io/index.html",
+    "static/css/main.5b5763bc.chunk.css.map": "/yassinePortfolio.github.io/static/css/main.5b5763bc.chunk.css.map",
+    "static/js/2.79acc478.chunk.js.LICENSE.txt": "/yassinePortfolio.github.io/static/js/2.79acc478.chunk.js.LICENSE.txt",
+    "static/media/address.a01cb8cc.png": "/yassinePortfolio.github.io/static/media/address.a01cb8cc.png",
+    "static/media/cv.b8f86a23.png": "/yassinePortfolio.github.io/static/media/cv.b8f86a23.png",
+    "static/media/email.a49e0158.png": "/yassinePortfolio.github.io/static/media/email.a49e0158.png",
+    "static/media/facebook.a5def58d.png": "/yassinePortfolio.github.io/static/media/facebook.a5def58d.png",
+    "static/media/github.44eee0c4.png": "/yassinePortfolio.github.io/static/media/github.44eee0c4.png",
+    "static/media/instagram.15d77dca.png": "/yassinePortfolio.github.io/static/media/instagram.15d77dca.png",
+    "static/media/linkedin.17e919bb.png": "/yassinePortfolio.github.io/static/media/linkedin.17e919bb.png",
+    "static/media/me.e39d1c9f.png": "/yassinePortfolio.github.io/static/media/me.e39d1c9f.png",
+    "static/media/mind.f287654f.png": "/yassinePortfolio.github.io/static/media/mind.f287654f.png",
+    "static/media/moon.3bea3d39.png": "/yassinePortfolio.github.io/static/media/moon.3bea3d39.png",
+    "static/media/phone.d90a6d23.png": "/yassinePortfolio.github.io/static/media/phone.d90a6d23.png",
+    "static/media/sun.f794832a.png": "/yassinePortfolio.github.io/static/media/sun.f794832a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b330a5f.js",
+    "static/js/2.79acc478.chunk.js",
+    "static/css/main.5b5763bc.chunk.css",
+    "static/js/main.f444da97.chunk.js"
+  ]
+}
