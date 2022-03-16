@@ -35,7 +35,7 @@ const Intro = () => {
             <a href="https://github.com/Yass525" target="_blank" rel="noopener noreferrer">    
                 <img className="i-icon" src={github} alt="github"></img>
               </a>
-            <a href="https://pdfhost.io/v/dfyyTP7fT_YassineTrabelsiCV" target="_blank" rel="noreferrer">    
+            <a href="https://pdfhost.io/v/xhFcfQgSC_yassineCV" target="_blank" rel="noreferrer">    
                 <img className="i-icon" src={cv} alt="cv"></img>
               </a>
             <a href="https://www.linkedin.com/in/yassine-trabelsi-639b0a195/" target="_blank" rel="noreferrer">
