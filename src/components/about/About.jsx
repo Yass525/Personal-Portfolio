@@ -1,17 +1,17 @@
 import "./about.css";
-import Me from "../../img/me2.png";
+import Mind from "../../img/mind.png";
 
 const About = () => {
   return (
     <div className="a">
       <div className="a-left">
         <div className="a-card bg"></div>
-        <div className="a-card">
-          <img src={Me}
+       
+          <img src={Mind}
             alt=""
             className="a-img"
           />
-        </div>
+        
       </div>
       <div className="a-right">
         <h1 className="a-title">Skills</h1>
