@@ -39,6 +39,7 @@
   margin: 50px 0px;
   font-weight: 300;
   width: 70%;
+  cursor: pointer;
 }
 
 .c-icon {
@@ -47,8 +48,26 @@
   margin-right: 20px;
 }
 
+.c-info-item:hover .c-icon{
+  /* shake the icon left and right and upscale it    */
+  animation: shake 0.5s;
+
+}
+.c-info-item:hover {
+ font-size:18px !important;
+
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
 .c-desc {
   font-weight: 200;
+  margin-bottom:2rem;
 }
 
 form {
@@ -81,7 +100,31 @@ button {
   color: white;
   font-weight: 500;
   cursor: pointer;
+  box-shadow: inset 0 0 0 0 #59b256;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
+
+button:hover{
+  /* change button color from the left to the right in 3s    */ 
+  /* animation: change-color 3s ease-in-out; */
+  box-shadow: inset 126.8px 0 0 0 #054603;
+}
+
+@keyframes change-color {
+  0% {
+    background-color: #59b256;
+  }
+  50% {
+    background-color: #2f752d;
+  }
+  100% {
+    background-color: #084e06;
+  }
+}
+
+
 
 hr.style11 {
 	border: 0;

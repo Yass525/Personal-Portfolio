@@ -3,32 +3,13 @@ export const products = [
   
   {
     id: 1,
-    // img: "https://i.ibb.co/BNhLvZ2/Insta-Profile.png",
-    // link: "https://www.instagram.com/yassiine_trabelsii/",
+    img: "https://i.ibb.co/PtkvxyH/rivalz.png",
+    link: "https://rivalzdraft.com",
   },
   {
     id: 2,
-    img: "",
-    link: "",
+    img: "https://i.ibb.co/zNjk76q/screencapture-orgaexpert-fr-2022-08-22-16-56-05.png",
+    link: "https://orgaexpert.fr",
   },
-  {
-    id: 3,
-    img: "",
-    link: "",
-  },
-  {
-    id: 4,
-    img: "",
-    link: "",
-  },
-  {
-    id: 5,
-    img: "",
-    link: "",
-  },
-  {
-    id: 6,
-    img: "",
-    link: "",
-  },
+  
 ];

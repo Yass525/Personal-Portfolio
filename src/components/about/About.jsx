@@ -6,33 +6,60 @@ const About = () => {
     <div className="a">
       <div className="a-left">
         <div className="a-card bg"></div>
-       
-          <img src={Mind}
-            alt=""
-            className="a-img"
-          />
-        
+
+        <img src={Mind} alt="" className="a-img" />
       </div>
       <div className="a-right">
         <h1 className="a-title">Skills</h1>
         <p className="a-sub">
-        Some of the significant aptitudes which will assist me with achieving your objectives.
+          Some of the significant aptitudes which will assist me with achieving
+          your objectives.
         </p>
-        <div className="a-desc">
-          <ul className="a-skill">
-          <li>HTML-CSS-JavaScript</li>
-          <li>nodejs-express</li>
-          <li>MySQL-MongoDB</li>
-          <li>Java/Spring</li>
-          <li>R</li>
+        <div className="a-desc2">
+          <ul className="a-titles">
+            <b>PROGRAMMING LANGUAGES</b>
+            <b>RUNTIME ENVIRONMENT</b>
+            <b>FRAMEWORKS & LIBRARIES</b>
+            <b>RESOURCE MANAGEMENT </b>
+            <b>SOURCE CONTROL </b>
+            <b>OTHER </b>
           </ul>
-          <ul className="a-skill">
-          <li>Algorithms</li>
-          <li>PHP-Symfony</li>
-          <li>ReactJS-Redux</li>
-          <li>Python-Django</li>
-          <li>Angular</li>
-          </ul>
+          <div className="a-right">
+            <ul className="a-skill2">
+              <li>Python </li>
+              <li>JavaScrip</li>
+              <li>C++</li>
+              <li>Java</li>
+            </ul>
+            <ul className="a-skill2">
+              <li>Node JS</li>
+            </ul>
+            <ul className="a-skill2">
+              <li>NextJ </li>
+              <li>ReactJS/Redux</li>
+              <li>Angular</li>
+              <li>Spring</li>
+              <li>Symfony 4 </li>
+              <li>Express JS</li>
+              <li>Electron JS</li>
+            </ul>
+            <ul className="a-skill2">
+              <li>MySQL </li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+            <ul className="a-skill2">
+              <li>GIT</li>
+            </ul>
+            <ul className="a-skill2">
+              <li>Microsoft Azure</li>
+              <li>Microsevices </li>
+              <li>Socket.io</li>
+              <li>REST</li>
+              <li>Jira</li>
+              <li>Trello</li>
+            </ul>
+          </div>
         </div>
         {/* <div className="a-award">
           <img src="" alt="we can put image here" className="a-award-img" />

@@ -1,60 +1,68 @@
 import "./intro.css";
 import Me from "../../img/me.png";
-import facebook from "../../img/facebook.png";
-import instagram from "../../img/instagram.png";
-import linkedin from "../../img/linkedin.png";
-import cv from "../../img/cv.png";
-import github from "../../img/github.png";
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 const Intro = () => {
+  const theme = useContext(ThemeContext);
+
   return (
     <div className="i">
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>
-          <h1 className="i-name">Yassine Trabelsi</h1>
+          <h1 className={ theme.state.darkMode ? "i-name-white" : "i-name"}>Yassine Trabelsi</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Software Engineer student</div>
               <div className="i-title-item">Web Developer</div>
               <div className="i-title-item">Fitness Enthusiast </div>
               <div className="i-title-item">Gamer</div>
-            </div>   
-            
+            </div>
           </div>
-          <p className="i-desc">
-         
+          <p className={ theme.state.darkMode ? "i-desc-white" : "i-desc"}>
             I'm a software engineer student at the university of technology
-            <b> ESPRIT</b>, i design and develop modern software and web applications.
-            <br></br>
-            I'm a fitness enthusiast who have been working out for more than 8 years
-            with experience in <b>Calisthenics</b> and <b>weightlifting</b>
-
+            <a href="https://esprit.tn/" target="_blank" rel="noopener noreferrer"><b> ESPRIT</b></a>, i design and develop modern software and web
+            applications.
+         
           </p>
+
           <div className="i-iconSet">
-            <a href="https://github.com/Yass525" target="_blank" rel="noopener noreferrer">    
-                <img className="i-icon" src={github} alt="github"></img>
-              </a>
-            <a href="https://pdfhost.io/v/xhFcfQgSC_yassineCV" target="_blank" rel="noreferrer">    
-                <img className="i-icon" src={cv} alt="cv"></img>
-              </a>
-            <a href="https://www.linkedin.com/in/yassine-trabelsi-639b0a195/" target="_blank" rel="noreferrer">
-                <img className="i-icon" src={linkedin} alt="linkedin"></img>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/yassine-trabelsi-639b0a195/" target="_blank"
+              rel="noopener noreferrer">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-            <a href="https://www.facebook.com/yassine.trabelsi.75/" target="_blank" rel="noreferrer">
-                <img className="i-icon" src={facebook} alt="Facebook"></img>
-            </a>
-            <a href="https://www.instagram.com/yassiine_trabelsii/" target="_blank" rel="noreferrer">    
-                <img className="i-icon" src={instagram} alt="instagram"></img>
-              </a>
+              </li>
+              <li>
+                <a href="https://github.com/Yass525" target="_blank"
+              rel="noopener noreferrer">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://docdro.id/jk6s3eX" target="_blank"
+              rel="noopener noreferrer">
+                  <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/yassiine_trabelsii/" target="_blank"
+              rel="noopener noreferrer">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+
         <svg
           width="75"
           height="75"
           viewBox="0 0 75 75"
           fill="none"
-          stroke="black"
+          stroke={ theme.state.darkMode ? "white" : "black"}
           className="i-scroll"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -88,7 +96,6 @@ const Intro = () => {
             <path
               id="Vector_4"
               d="M34.5 27V9"
-              
               strokeWidth="2.9895"
               strokeMiterlimit="10"
               strokeLinecap="round"

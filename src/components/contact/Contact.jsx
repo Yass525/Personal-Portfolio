@@ -30,8 +30,6 @@ joiError.details.forEach(({ path, message }) =>
 return errors;
 };
 
-
-
 const Contact = () => {
   const formRef = useRef();
   
@@ -79,7 +77,7 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
-              yassine.trabelsi1@esprit.tn
+              yassine.trabelssi98@gmail.com
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
@@ -94,10 +92,7 @@ const Contact = () => {
             </p>
             <hr className="style11"/>
             <br></br>
-            <p className="c-desc">
-            Want a fitness plan customized for your personal goals and lifestyle ? 
-            You are in the right place!
-            </p>
+          
           <form ref={formRef} onSubmit={handleSubmit} >
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" required />
             {errors.user_name && <p>{errors.user_name}</p>}
