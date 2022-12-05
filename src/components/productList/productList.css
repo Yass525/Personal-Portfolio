@@ -26,16 +26,35 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 770px) {
   .pl {
-    padding: 10px;
+    padding: 101px 53px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-
+  
   .pl-texts {
     width: 100%;
   }
-
-  .pl-desc {
-    display: none;
+  
+  .pl-title {
+    font-size: 37px;
+    font-weight: 600;
   }
+  
+  .pl-desc {
+    margin: 20px 0px;
+  }
+  
+  .pl-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
 }

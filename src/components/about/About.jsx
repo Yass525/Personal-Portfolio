@@ -5,7 +5,6 @@ const About = () => {
   return (
     <div className="a">
       <div className="a-left">
-        <div className="a-card bg"></div>
 
         <img src={Mind} alt="" className="a-img" />
       </div>
@@ -35,7 +34,7 @@ const About = () => {
               <li>Node JS</li>
             </ul>
             <ul className="a-skill2">
-              <li>NextJ </li>
+              <li>NextJS </li>
               <li>ReactJS/Redux</li>
               <li>Angular</li>
               <li>Spring</li>

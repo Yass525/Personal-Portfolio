@@ -48,13 +48,13 @@
   margin-right: 20px;
 }
 
+.c-info-item:hover {
+  font-size:18px !important;
+  
+}
 .c-info-item:hover .c-icon{
   /* shake the icon left and right and upscale it    */
   animation: shake 0.5s;
-
-}
-.c-info-item:hover {
- font-size:18px !important;
 
 }
 
@@ -72,6 +72,12 @@
 
 form {
   margin-top: 20px;
+}
+
+.c-left {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
 }
 
 input {
@@ -133,7 +139,7 @@ hr.style11 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 770px) {
   .c-wrapper {
     flex-direction: column;
     padding: 0px 50px;

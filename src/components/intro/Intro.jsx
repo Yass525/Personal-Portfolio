@@ -14,7 +14,7 @@ const Intro = () => {
           <h1 className={ theme.state.darkMode ? "i-name-white" : "i-name"}>Yassine Trabelsi</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Software Engineer student</div>
+              <div className="i-title-item">Software Engineer</div>
               <div className="i-title-item">Web Developer</div>
               <div className="i-title-item">Fitness Enthusiast </div>
               <div className="i-title-item">Gamer</div>
