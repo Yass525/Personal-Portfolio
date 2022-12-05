@@ -82,17 +82,17 @@
 }
 
 @keyframes move {
-  25% {
+  /* 25% {
+    transform: translateY(-50px);
+  } */
+  50% {
     transform: translateY(-50px);
   }
-  50% {
+  /* 75% {
     transform: translateY(-100px);
-  }
-  75% {
-    transform: translateY(-150px);
-  }
+  } */
   100% {
-    transform: translateY(-200px);
+    transform: translateY(0px);
   }
 }
 
@@ -120,8 +120,6 @@
 }
 
 .i-bg {
-  display: none;
-    visibility: hidden;
   clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   background-color: #4d4d4d;
   width: 100%;

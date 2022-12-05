@@ -11,45 +11,62 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>
-          <h1 className={ theme.state.darkMode ? "i-name-white" : "i-name"}>Yassine Trabelsi</h1>
+          <h1 className={theme.state.darkMode ? "i-name-white" : "i-name"}>
+            Yassine Trabelsi
+          </h1>
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Software Engineer</div>
               <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">Fitness Enthusiast </div>
-              <div className="i-title-item">Gamer</div>
             </div>
           </div>
-          <p className={ theme.state.darkMode ? "i-desc-white" : "i-desc"}>
+          <p className={theme.state.darkMode ? "i-desc-white" : "i-desc"}>
             I'm a software engineer student at the university of technology
-            <a href="https://esprit.tn/" target="_blank" rel="noopener noreferrer"><b> ESPRIT</b></a>, i design and develop modern software and web
-            applications.
-         
+            <a
+              href="https://esprit.tn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b> ESPRIT</b>
+            </a>
+            , i design and develop modern software and web applications.
           </p>
 
           <div className="i-iconSet">
             <ul>
               <li>
-                <a href="https://www.linkedin.com/in/yassine-trabelsi-639b0a195/" target="_blank"
-              rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/yassine-trabelsi-639b0a195/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="https://github.com/Yass525" target="_blank"
-              rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Yass525"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="https://docdro.id/jk6s3eX" target="_blank"
-              rel="noopener noreferrer">
+                <a
+                  href="https://docdro.id/RDva6HD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/yassiine_trabelsii/" target="_blank"
-              rel="noopener noreferrer">
+                <a
+                  href="https://www.instagram.com/yassiine_trabelsii/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
@@ -62,7 +79,7 @@ const Intro = () => {
           height="75"
           viewBox="0 0 75 75"
           fill="none"
-          stroke={ theme.state.darkMode ? "white" : "black"}
+          stroke={theme.state.darkMode ? "white" : "black"}
           className="i-scroll"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -115,8 +132,9 @@ const Intro = () => {
         </svg>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
-        <img src={Me} alt="" className="i-img" />
+        <div className="i-bg">
+          <img src={Me} alt="" className="i-img" />
+        </div>
       </div>
     </div>
   );

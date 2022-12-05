@@ -21,29 +21,30 @@ const About = () => {
             <b>FRAMEWORKS & LIBRARIES</b>
             <b>RESOURCE MANAGEMENT </b>
             <b>SOURCE CONTROL </b>
+            <b>DEVOPS </b>
             <b>OTHER </b>
           </ul>
           <div className="a-right">
             <ul className="a-skill2">
+              <li>JavaScript</li>
               <li>Python </li>
-              <li>JavaScrip</li>
               <li>C++</li>
               <li>Java</li>
             </ul>
             <ul className="a-skill2">
-              <li>Node JS</li>
+              <li>NodeJS</li>
             </ul>
             <ul className="a-skill2">
               <li>NextJS </li>
               <li>ReactJS/Redux</li>
               <li>Angular</li>
               <li>Spring</li>
-              <li>Symfony 4 </li>
+              <li>Symfony</li>
               <li>Express JS</li>
               <li>Electron JS</li>
             </ul>
             <ul className="a-skill2">
-              <li>MySQL </li>
+              <li>MySQL</li>
               <li>PostgreSQL</li>
               <li>MongoDB</li>
             </ul>
@@ -51,7 +52,15 @@ const About = () => {
               <li>GIT</li>
             </ul>
             <ul className="a-skill2">
+              <li>Jenkins</li>
+              <li>Docker </li>
+              <li>Docker compose</li>
+              <li>Docker Hub</li>
+              <li>Sonar</li>
+              <li>Nexus</li>
               <li>Microsoft Azure</li>
+            </ul>
+            <ul className="a-skill2">
               <li>Microsevices </li>
               <li>Socket.io</li>
               <li>REST</li>
